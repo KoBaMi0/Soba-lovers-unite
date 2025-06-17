@@ -60,3 +60,6 @@ TikTokなどのショート動画を投稿してみる
 開発時：faker, pry-byebug, rubocop, bullet
 MVP：Devise, tailwindcss-rails
 本リリース：google-authenticator-rails, ransack
+
+# ■ 画面遷移図
+https://www.figma.com/design/Vb9KPSLuN5nS84kLyI5zSW/%E7%84%A1%E9%A1%8C?node-id=0-1&t=QFiKqZvLCWRqGeXf-1
