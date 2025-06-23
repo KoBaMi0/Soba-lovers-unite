@@ -43,6 +43,17 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
+  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
+
+  gem "rubocop"
+
+  gem "faker"
+
+  gem "pry-byebug"
+
+  gem "rspec-rails"
+
+  gem "bullet"
 end
 
 group :development do
@@ -57,3 +68,5 @@ group :test do
 end
 
 gem "tailwindcss-rails", "~> 4.2"
+
+gem "devise"
