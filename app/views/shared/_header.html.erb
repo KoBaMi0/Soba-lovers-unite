@@ -1,0 +1,27 @@
+<header>
+    <div class="navbar bg-lime-800 text-primary-content" style="height: 160px;">
+        <!--ヘッダー左サイドのブロック-->
+        <div class="navbar-start">
+            <div class="dropdown">
+                <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" fill="none" viewBox="0 0 24 24" stroke="currentColor"> <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h7" /> </svg>
+                </div>
+            </div>
+        </div>
+
+        <!--ヘッダーのセンターのブロック-->
+        <div class="navbar-center">
+                <%= link_to root_path do %>
+                    <%= image_tag 'soba_lovers_logo.png', class: "h-auto w-60" %>
+                <% end %>
+        </div>
+
+        <!--ヘッダーの右サイドのブロック-->
+        <div class="navbar-end">
+            <div class="block">
+                    <%= link_to "ユーザー登録", "", class: "btn btn-lg", style: "margin-right: 10px;"%>
+                    <%= link_to "ログイン", "", class: "btn btn-lg"%>
+            </div>
+        </div>
+    </div>
+</header>
