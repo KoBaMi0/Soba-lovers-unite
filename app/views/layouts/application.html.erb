@@ -19,8 +19,11 @@
   </head>
 
   <body>
-    <main class="container mx-auto mt-28 px-5 flex">
+    <%= render 'shared/header' %>
+    <main class="min-h-screen bg-cover bg-[url('/background_image.jpg')]">
       <%= yield %>
     </main>
+    <%= render 'shared/footer' %>
   </body>
+
 </html>

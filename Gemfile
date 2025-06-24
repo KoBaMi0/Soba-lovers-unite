@@ -43,7 +43,6 @@ group :development, :test do
 
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
-  gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
 
   gem "rubocop"
 
@@ -70,3 +69,9 @@ end
 gem "tailwindcss-rails", "~> 4.2"
 
 gem "devise"
+
+gem "sassc-rails"
+
+gem "cssbundling-rails"
+
+gem "jsbundling-rails"
