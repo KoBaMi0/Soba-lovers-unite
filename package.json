@@ -8,12 +8,15 @@
     "test": "test"
   },
   "scripts": {
+    "build": "yarn build:css",
+    "build:css": "tailwindcss -i ./app/assets/stylesheets/application.css -o ./app/assets/builds/tailwind.css --minify",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "daisyui": "^5.0.43"
+    "daisyui": "^5.0.43",
+    "tailwindcss": "^4.1.10"
   }
 }
