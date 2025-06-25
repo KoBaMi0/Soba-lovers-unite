@@ -83,6 +83,4 @@ test:
 #
 production:
   <<: *default
-  database: soba_lovers_production
-  username: soba_lovers
-  password: <%= ENV["SOBA_LOVERS_DATABASE_PASSWORD"] %>
+  url: <%= ENV['DATABASE_URL'] %>
