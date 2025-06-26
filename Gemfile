@@ -66,7 +66,11 @@ group :test do
   gem "selenium-webdriver"
 end
 
+<<<<<<< HEAD
+# gem "tailwindcss-rails", "~> 4.2"
+=======
 gem "tailwindcss-rails", "~> 4.2.3"
+>>>>>>> 63fb32dff6af988ad8d1fc1b17dd8a3c5894072c
 
 gem "devise"
 
@@ -75,3 +79,5 @@ gem "sassc-rails"
 gem "cssbundling-rails"
 
 gem "jsbundling-rails"
+
+gem "tailwindcss-rails", "~> 4.2"
