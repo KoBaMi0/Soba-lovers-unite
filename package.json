@@ -14,9 +14,5 @@
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "daisyui": "^5.0.43",
-    "tailwindcss": "^4.1.10"
-  }
+  "license": "ISC"
 }
