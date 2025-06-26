@@ -407,10 +407,10 @@ DEPENDENCIES
   selenium-webdriver
   sprockets-rails
   stimulus-rails
-  tailwindcss-rails (~> 4.2)
+  tailwindcss-rails (~> 4.2.3)
   turbo-rails
   tzinfo-data
   web-console
 
 BUNDLED WITH
-   2.6.9
+   2.4.19
