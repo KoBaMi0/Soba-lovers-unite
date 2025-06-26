@@ -74,4 +74,4 @@ gem "cssbundling-rails"
 
 gem "jsbundling-rails"
 
-gem "tailwindcss-rails", "~> 4.2"
+gem "tailwindcss-rails"
