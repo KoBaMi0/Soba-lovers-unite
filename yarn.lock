@@ -2,7 +2,7 @@
 # yarn lockfile v1
 
 
-tailwindcss@^4.1.10:
-  version "4.1.10"
-  resolved "https://registry.npmjs.org/tailwindcss/-/tailwindcss-4.1.10.tgz"
-  integrity sha512-P3nr6WkvKV/ONsTzj6Gb57sWPMX29EPNPopo7+FcpkQaNsrNpZ1pv8QmrYI2RqEKD7mlGqLnGovlcYnBK0IqUA==
+daisyui@^5.0.43:
+  version "5.0.43"
+  resolved "https://registry.npmjs.org/daisyui/-/daisyui-5.0.43.tgz"
+  integrity sha512-2pshHJ73vetSpsbAyaOncGnNYL0mwvgseS1EWy1I9Qpw8D11OuBoDNIWrPIME4UFcq2xuff3A9x+eXbuFR9fUQ==
