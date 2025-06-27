@@ -1,0 +1,12 @@
+<fieldset class="fieldset w-xs bg-white dark:bg-black border border-base-300 text-content p-4 rounded-box ml-auto mr-auto mt-[150px] mb-[150px]" id="user-form">
+  <%= form_with model:@post do |f| %>
+
+    <%= f.label :title, "タイトル", class: "fieldset-label" %>
+    <%= f.text_field :title, class: "input" %>
+
+    <%= f.label :body, "説明欄", class: "fieldset-label" %>
+    <%= f.text_field :body, class: "input" %>
+
+    <%= f.submit "送信", class: "btn btn-neutral mt-4" %>
+  <% end %>
+</fieldset>
