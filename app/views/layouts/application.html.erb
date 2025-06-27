@@ -17,11 +17,13 @@
     <%= javascript_importmap_tags %>
   </head>
 
-  <body>
+  <body class="min-h-screen flex flex-col bg-cover bg-[url('/background_image.jpg')]">
     <%= render 'shared/header' %>
-    <main class="min-h-screen bg-cover bg-[url('/background_image.jpg')]">
+
+    <main class="flex-grow">
       <%= yield %>
     </main>
+
     <%= render 'shared/footer' %>
   </body>
 
