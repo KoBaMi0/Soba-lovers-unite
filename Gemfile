@@ -48,7 +48,7 @@ group :development, :test do
 
   gem "faker"
 
-  gem "pry-byebug"
+  gem "pry-rails"
 
   gem "rspec-rails"
 
