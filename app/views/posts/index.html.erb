@@ -1,9 +1,7 @@
-<h1 class="text-3xl font-bold underline">
-    Hello world!
-</h1>
-
-<button class="bg-gray-900 hover:bg-gray-800 text-white rounded px-4 py-2">tailwind</button>
-
-<button class="btn">daisyUI</button>
-<span class="loading loading-spinner text-warning"></span>
-<span class="loading loading-spinner text-success"></span>
+<div class="mt-8 mb-8 gap-8 flex flex-wrap items-center justify-center">
+    <% if @posts.present? %>
+        <%= render @posts %>
+    <% else %>
+        <div class='text-lg text-center'>投稿がありません</div>
+    <% end %>
+</div>
