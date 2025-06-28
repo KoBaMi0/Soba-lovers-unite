@@ -14,7 +14,7 @@ RUN apt-get update -qq && apt-get install -y postgresql-client
 RUN mkdir /soba-lovers
 WORKDIR /soba-lovers
 COPY Gemfile /soba-lovers/
-# COPY Gemfile.lock /soba-lovers/
+COPY Gemfile.lock /soba-lovers/
 RUN bundle install
 COPY package.json yarn.lock ./
 COPY package.json ./
