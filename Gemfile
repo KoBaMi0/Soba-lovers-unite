@@ -74,6 +74,6 @@ gem "cssbundling-rails"
 
 gem "jsbundling-rails"
 
-# gem "tailwindcss-rails"
+gem "tailwindcss-rails"
 
 gem "carrierwave"
