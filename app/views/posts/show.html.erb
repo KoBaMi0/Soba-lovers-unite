@@ -19,6 +19,14 @@
             <div class="opacity-50 gap-2 line-clamp-6">
                 <p class="h-30 w-full text-sm" style="overflow-wrap: break-word;"><%= @post.body %></p>
             </div>
+
+            <div>
+                <h2 class="mb-6 text-base">コメント欄</h2>
+                <div class="mb-5">
+                    <%= render "comments/form" %>
+                </div>
+            </div>
+
         </div>
     </div>
 </div>
