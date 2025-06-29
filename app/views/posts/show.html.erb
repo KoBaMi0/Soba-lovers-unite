@@ -1,1 +1,24 @@
-aaa
+<div class="flex justify-center mt-8 mb-8">
+    <div class="card w-8/10 space-x-4 bg-white shadow-sm">
+        <div class="text-black card-body">
+            <div>
+                <% if @post.avatar? %>
+                    <%= image_tag @post.avatar.url, class: "skeleton h-auto w-full", alt: "Post image" %>
+                <% end %>
+            </div>
+            <div class="flex flex-row relative items-start w-full mt-3">
+                <div>
+                    <p class="h-15 text-3xl">🥢</p>
+                </div>
+                <div class="w-8/10 line-clamp-2">
+                    <h2 class="text-xl font-bold" style="overflow-wrap: break-word;">
+                        <%= @post.title %>
+                    </h2>
+                </div>
+            </div>
+            <div class="opacity-50 gap-2 line-clamp-6">
+                <p class="h-30 w-full text-sm" style="overflow-wrap: break-word;"><%= @post.body %></p>
+            </div>
+        </div>
+    </div>
+</div>
