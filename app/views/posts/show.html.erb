@@ -15,6 +15,11 @@
                         <%= @post.title %>
                     </h2>
                 </div>
+                <% if current_user.id == @post.user.id %>
+                    <div class="absolute top-0 right-0 mt-1 ml-2">
+                        <%= link_to image_tag("trash_can_icon.svg", class: "w-5 h-auto"), post_path(@post.id), method: :delete, data: { turbo_method: :delete } %>
+                    </div>
+                <% end %>
             </div>
             <div class="opacity-50 gap-2 line-clamp-6">
                 <p class="h-30 w-full text-sm" style="overflow-wrap: break-word;"><%= @post.body %></p>

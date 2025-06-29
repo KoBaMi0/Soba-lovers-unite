@@ -21,6 +21,18 @@ class PostsController < ApplicationController
     @comment = Comment.new
   end
 
+  def destroy
+    post_destroy = Post.find(params[:id])
+
+    if post_destroy.destroy
+      redirect_to root_path
+    else
+      @post = Post.find(params[:id])
+      @comment = Comment.new
+      render :show, status: :unprocessable_entity
+    end
+  end
+
   private
 
   def post_params
