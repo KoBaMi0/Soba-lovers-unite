@@ -34,6 +34,10 @@
                 <div class="mb-5">
                     <%= render "comments/form" %>
                 </div>
+
+                <div>
+                    <%= render "comments/comment", locals: { comments: @comments } %>
+                </div>
             </div>
 
         </div>
