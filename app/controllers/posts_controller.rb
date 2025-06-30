@@ -1,4 +1,6 @@
 class PostsController < ApplicationController
+  before_action :require_login, only: [ :show ]
+
   def index
     @posts = Post.all
   end
@@ -19,6 +21,7 @@ class PostsController < ApplicationController
   def show
     @post = Post.find(params[:id])
     @comment = Comment.new
+    @comments = @post.comments.includes(:user)
   end
 
   def destroy
@@ -51,4 +54,5 @@ class PostsController < ApplicationController
   def post_params
     params.require(:post).permit(:title, :avatar, :body).merge(user_id: current_user.id)
   end
+
 end

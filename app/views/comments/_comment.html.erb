@@ -1,0 +1,14 @@
+<% @comments.each do |comment| %>
+    <div class="card w-full md:w-[490px] shadow-sm mb-2">
+        <div class="card-body flex flex-row items-start gap-4">
+            <div class="flex flex-col gap-1 w-4/6">
+                <p class="text-sm text-gray-600" style="overflow-wrap: break-word;">
+                    <%= comment.body %>
+                </p>
+                <% if current_user.id == comment.user.id %>
+                    <%= link_to image_tag("trash_can_icon.svg", class: "mt-2 ml-2 w-auto h-5 absolute top-7 right-5"), post_comment_path(@post, comment), method: :delete, data: { turbo_method: :delete } %>
+                <% end %>
+            </div>
+        </div>
+    </div>
+<% end %>
