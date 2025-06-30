@@ -17,7 +17,11 @@
                 </div>
                 <% if current_user.id == @post.user.id %>
                     <div class="absolute top-0 right-0 mt-1 ml-2">
-                        <%= link_to image_tag("trash_can_icon.svg", class: "w-5 h-auto"), post_path(@post.id), method: :delete, data: { turbo_method: :delete } %>
+                        <%= link_to image_tag("trash_can_icon.svg", class: "w-14 h-auto"), post_path(@post.id), method: :delete, data: { turbo_method: :delete } %>
+                    </div>
+
+                    <div class="absolute top-0 right-15 mt-1 ml-2">
+                        <%= link_to image_tag("edit_icon.png", class: "w-17 h-auto"), edit_post_path(@post.id) %>
                     </div>
                 <% end %>
             </div>
