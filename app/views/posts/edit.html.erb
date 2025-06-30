@@ -1,0 +1,26 @@
+<%= form_with model: @post, url: post_path, local: true do |f| %>
+   <div class="flex justify-center">
+      <div class="card dark:bg-black bg-white w-140 shadow-sm items-center mt-11 mb-11 gap-5 flex flex-col">
+         <div class="mt-8 w-80 h-80 overflow-hidden rounded-xl">
+            <%= image_tag @post.avatar_url, class: "w-80 h-80 object-cover" %>
+         </div>
+         <div class="w-80 flex flex-col">
+            <%= f.label :avatar, "蕎麦の画像" %>
+            <%= f.file_field :avatar, class: 'file-input w-full', accept: 'image/*' %>
+         </div>
+         <div class="w-80 flex flex-col">
+            <%= f.label :title, "タイトル" %>
+            <%= f.text_field :title, :placeholder => @post.title, class: "input w-full" %>
+         </div>
+         <div class="w-80 flex flex-col">
+            <%= f.label :body, "説明欄" %>
+            <div class="input validator w-full">
+               <%= f.text_field :body, :placeholder => @post.body, class: "align-middle" %>
+            </div>
+         </div>
+         <div>
+            <%= f.submit "更新", class: "btn btn-primary mb-8 mt-3"%>
+         </div>
+      </div>
+   </div>
+<%end%>
