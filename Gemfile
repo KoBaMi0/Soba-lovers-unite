@@ -68,12 +68,10 @@ end
 
 gem "devise"
 
-gem "sassc-rails"
-
 gem "cssbundling-rails"
 
 gem "jsbundling-rails"
 
-gem "tailwindcss-rails"
+gem "tailwindcss-rails", "= 4.0.0"
 
 gem "carrierwave"
