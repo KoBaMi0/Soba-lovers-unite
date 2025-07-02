@@ -76,4 +76,6 @@ gem "tailwindcss-rails", "= 4.0.0"
 
 gem "carrierwave"
 
+gem 'fog-core'
+
 gem 'fog-aws'
