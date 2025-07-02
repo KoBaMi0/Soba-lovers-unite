@@ -75,3 +75,5 @@ gem "jsbundling-rails"
 gem "tailwindcss-rails", "= 4.0.0"
 
 gem "carrierwave"
+
+gem 'fog-aws'
