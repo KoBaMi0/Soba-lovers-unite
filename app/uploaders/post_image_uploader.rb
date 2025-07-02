@@ -1,12 +1,19 @@
 class PostImageUploader < CarrierWave::Uploader::Base
-  storage :fog
+  if Rails.env.development?
+    storage :file
+  elsif Rails.env.test?
+  	storage :file
+  else
+    storage :fog
+  end
+  
   # Include RMagick, MiniMagick, or Vips support:
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
   # include CarrierWave::Vips
 
   # Choose what kind of storage to use for this uploader:
-  storage :file
+  # storage :file
   # storage :fog
 
   # Override the directory where uploaded files will be stored.
