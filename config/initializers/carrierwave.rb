@@ -9,5 +9,6 @@ unless Rails.env.development? || Rails.env.test?
 
     config.fog_directory  = ENV.fetch('AWS_S3_BUCKET_NAME')
     config.cache_storage = :fog
+    config.fog_attributes = {}
   end
 end
