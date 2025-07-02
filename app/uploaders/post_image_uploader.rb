@@ -1,4 +1,5 @@
 class PostImageUploader < CarrierWave::Uploader::Base
+  storage :fog
   # Include RMagick, MiniMagick, or Vips support:
   # include CarrierWave::RMagick
   # include CarrierWave::MiniMagick
