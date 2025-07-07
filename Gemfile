@@ -72,7 +72,7 @@ gem "cssbundling-rails"
 
 gem "jsbundling-rails"
 
-gem "tailwindcss-rails", "= 4.0.0"
+gem "tailwindcss-rails", "4.3.0"
 
 gem "carrierwave"
 
